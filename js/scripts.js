@@ -26,7 +26,7 @@ function makeArray (input) {
     }
   });
 
-  var finalString = numberArray.toString(' ');
+  var finalString = numberArray.toString('');
   return finalString;
 } // end of makeArray function
 
