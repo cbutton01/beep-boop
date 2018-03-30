@@ -18,7 +18,7 @@ function makeArray (input) {
     var parsed = parseInt(string);
     var splitString = string.split('');
     if (parsed % 3 === 0 && parsed != 0) {
-      numberArray.splice(string, 1, "I'm sorry, Dave.  I'm afraid I can't do that.");
+      numberArray.splice(string, 1, "I'm sorry, Dave.  I'm afraid I can't do that");
     } else if (splitString.indexOf('1') > -1) {
       numberArray.splice(string, 1, 'boop');
     } else if (splitString.indexOf('0') > -1) {
