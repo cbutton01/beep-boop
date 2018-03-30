@@ -3,7 +3,6 @@ function hal (){
 }
 
 function makeArray (input) {
-  // debugger;
   var currentNumber = 0;
   var numberArray = [];
   for (var i = 0; i < input; i++) { //recieve input and push all numbers until input as a string to numberArray
@@ -11,8 +10,6 @@ function makeArray (input) {
     currentNumber++; //increase currentNumber by one
   }
   numberArray.push(''+input); //push input as string to numberArray
-
-
 
   numberArray.forEach(function(string){
     var parsed = parseInt(string);
@@ -25,7 +22,6 @@ function makeArray (input) {
       numberArray.splice(string, 1, 'beep');
     }
   });
-
   var finalString = numberArray.toString('');
   return finalString;
 } // end of makeArray function
@@ -39,10 +35,10 @@ function finalOutput (input) {
 }
 
 $(document).ready(function(){
+
   $('#input').submit(function (event) {
     event.preventDefault();
     var input = finalOutput($('#numbers').val());
     $('#string-input').hide().text(input).fadeIn();
-
   })
 });
