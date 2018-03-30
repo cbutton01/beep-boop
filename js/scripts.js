@@ -26,7 +26,8 @@ function makeArray (input) {
     }
   });
 
-  return numberArray;
+  var finalString = numberArray.toString(' ');
+  return finalString;
 } // end of makeArray function
 
 function finalOutput (input) {
@@ -36,3 +37,12 @@ function finalOutput (input) {
     return makeArray(input);
   }
 }
+
+$(document).ready(function(){
+  $('#input').submit(function (event) {
+    event.preventDefault();
+    var input = finalOutput($('#numbers').val());
+    console.log(input);
+    $('#string-input').text(input);
+  })
+});
