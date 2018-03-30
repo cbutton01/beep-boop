@@ -15,6 +15,22 @@ body {
   max-width: 75%;
 }
 
+button {
+  border: 0px;
+  border-radius: 10px;
+  background-color: #841944;
+  color: white;
+  box-shadow: 0px 5px 10px #222;
+}
+
+button:hover {
+  border: 0px;
+  border-radius: 10px;
+  background-color: #841944;
+  color: yellow;
+  box-shadow: 0px 2px 20px #222;
+}
+
 .form {
   align-self: center;
 }
