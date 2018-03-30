@@ -20,6 +20,7 @@ function hal (){
 
 function makeArray (input) {
   var currentNumber = 0;
+  var numberArray = [];
   var arrayForOtherNumbers = []; //array to check for numbers containing zero's and one's
   for (var i = 0; i < input; i++) { //recieve input and push all numbers until input as a string to numberArray
     numberArray.push(''+currentNumber);
@@ -30,9 +31,16 @@ function makeArray (input) {
     var numberArray = numberArray[index].split('') //split current string into new array to look for ones and zero's
 
     for (var j = 0; j <= arrayForOtherNumbers.length; j++) {
-      arrayForOtherNumbers[j]
+      if (arrayForOtherNumbers[j].indexOf('1') > -1) {
+        numberArray[index].splice(numberArray[index], 1, 'boop');
+      } else if (arrayForOtherNumbers[j].indexOf('0') > -1) {
+        numberArray[index].splice(numberArray[index], 1, 'beep');
+      }
     } //nested for loop
   } // parent for loop
+
+return numberArray;
+
 } // end of makeArray function
 
 function finalOutput (input) {
