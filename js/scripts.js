@@ -42,7 +42,7 @@ $(document).ready(function(){
   $('#input').submit(function (event) {
     event.preventDefault();
     var input = finalOutput($('#numbers').val());
-    console.log(input);
-    $('#string-input').text(input);
+    $('#string-input').hide().text(input).fadeIn();
+
   })
 });

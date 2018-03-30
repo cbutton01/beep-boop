@@ -1,0 +1,9 @@
+.card {
+  border: 0px;
+  box-shadow: 0px 20px 30px #222;
+  height: 300px;
+}
+
+#string-input {
+  display: none;
+}
