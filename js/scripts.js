@@ -39,6 +39,8 @@ $(document).ready(function(){
   $('#input').submit(function (event) {
     event.preventDefault();
     var input = finalOutput($('#numbers').val());
+    $('.jumbotron').fadeOut().hide();
+    $('#HAL').fadeIn();
     $('#string-input').hide().text(input).fadeIn();
   })
 });
