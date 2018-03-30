@@ -14,15 +14,22 @@ function boop (input) {
   }
 }
 
-function hal (input){
-  if (input === 3) {
-    return "I'm sorry, Dave.  I'm afraid I can't do that.";
-  } else {
-    return input;
-  }
+function hal (){
+  return "I'm sorry, Dave.  I'm afraid I can't do that.";
 }
 
 function makeArray (input) {
-  var numberArray = (""+input).split('');
-  return numberArray;
+  var currentNumber = 0;
+  var numberArray = (""+input).split(' ');
+  for (var i = 0; i < input; i++) {
+
+  }
+}
+
+function finalOutput (input) {
+  if (input % 3 === 0){
+    return  hal();
+  } else {
+    return makeArray(input);
+  }
 }

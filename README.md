@@ -11,13 +11,13 @@ A website created with C# and HTML where a user can submit a word and determine 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | spec | 0 | beep |
-| spec | 1 | boop |
-| spec | 2 | 2 |
+| spec | 1 | beep boop |
+| spec | 2 | beep boop 2 |
 | spec | 3 | "I'm sorry, Dave.  I'm afraid I can't do that." |
-| spec | 10 | boop |
+| spec | 10 | beep boop 2 "Sorry" 4 5 "Sorry" 7 8 "Sorry" boop |
 | spec | 11 | boop |
 | spec | 15 | "I'm sorry, Dave.  I'm afraid I can't do that." |
-| spec | 20 | beep |
+| spec | 20 | beep boop 2 "Sorry" 4 5 "Sorry" 7 8 "Sorry" boop boop boop boop boop "Sorry" boop boop "Sorry" boop beep |
 
 ## Setup/Installation Requirements
 
